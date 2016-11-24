@@ -1,0 +1,8 @@
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/CapstoneTest.gtk-gui.gui.stetic
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/bin/Debug/CapstoneTest.exe.mdb
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/bin/Debug/CapstoneTest.exe
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/CapstoneTest.exe
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/CapstoneTest.exe.mdb
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/CapstoneTest.EzbarLogo.png
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/CapstoneTest.TheFutureOfDrinking.png
