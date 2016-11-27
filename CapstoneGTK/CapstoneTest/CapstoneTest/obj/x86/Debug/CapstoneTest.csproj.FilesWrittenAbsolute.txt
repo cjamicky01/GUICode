@@ -6,3 +6,7 @@
 /home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/CapstoneTest.exe.mdb
 /home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/CapstoneTest.EzbarLogo.png
 /home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/obj/x86/Debug/CapstoneTest.TheFutureOfDrinking.png
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/bin/Debug/Raspberry.System.dll
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/bin/Debug/Raspberry.IO.dll
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/bin/Debug/Raspberry.IO.GeneralPurpose.dll
+/home/cjamicky01/Documents/CapstoneGTK/CapstoneTest/CapstoneTest/bin/Debug/Raspberry.IO.Interop.dll

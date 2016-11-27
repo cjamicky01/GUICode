@@ -3,6 +3,7 @@ using Gtk;
 using System.Collections.Generic;
 using FileGPIO;
 using System.IO;
+using Raspberry.IO.GeneralPurpose;
 
 public partial class MainWindow: Gtk.Window
 {
@@ -126,6 +127,9 @@ public partial class MainWindow: Gtk.Window
 	public MainWindow () : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
+		textview1.Buffer.Text = "This is EzBar's Proof of Concept! \n The purpose of " +
+			"this application \n is to prove that our deisng is \n functional and is " +
+			"able to accurately \n pour 1 Oz. of liquid!";
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
@@ -146,10 +150,41 @@ public partial class MainWindow: Gtk.Window
 	protected void OnButton1Clicked (object sender, EventArgs e)
 	{
 		//throw new NotImplementedException ();
+		//string Msg = "Pouring!";
+//		var tag = new TextTag (null);
+//		this.textview1.Buffer.TagTable.Add (tag);
+//		tag.Weight = Pango.Weight.Bold;
+//		var iter = this.textview1.Buffer.GetIterAtLine (0);
+//		this.textview1.Buffer.InsertWithTags (ref iter, "Bold text\n", tag);
+		//textview1.Buffer.Clear();
+		//System.Threading.Thread.Sleep (1000);
+		//textview1.Buffer.Text = "POURING!";
+
+		SetMessageBox ("Pouring");
+
+		//System.Threading.Thread.Sleep (1000);
 		OutputPin (enumPIN.gpio11, true);
+		//MessageDialog md = new MessageDialog (null, DialogFlags.Modal, MessageType.Info, ButtonsType.Ok, Msg);
+		//md.Run ();
+		//md.Dispose ();
+		//AutoClosingMessageBox.Show("Text", 100);
+		//var led1 = ConnectorPin.P1Pin11.Output();
+		//var connection = new GpioConnection (led1);
+		//connection.Toggle (led1);
 		System.Threading.Thread.Sleep(10000);
+		//connection.Toggle (led1);
+		//connection.Close ();
 		OutputPin (enumPIN.gpio11, false);
-		MessageBox.Show("Pressed");
+		//textview1.Buffer.Text = "Ready to start Pouring again";
+		SetMessageBox("Ready To Pour");
+		//CleanUpAllPins ();
+		//MessageBox.Show("Pressed");
+	}
+
+	public void SetMessageBox(string msg){
+		textview3.Buffer.Clear ();
+		textview3.Buffer.Text = msg;
+		System.Threading.Thread.Sleep (1000);
 	}
 
 }
@@ -163,3 +198,5 @@ public class MessageBox
 		md.Destroy ();
 	}
 }
+
+

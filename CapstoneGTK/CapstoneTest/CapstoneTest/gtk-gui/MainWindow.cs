@@ -7,13 +7,19 @@ public partial class MainWindow
 	
 	private global::Gtk.Button button1;
 	
+	private global::Gtk.Image image1;
+	
+	private global::Gtk.Image image2;
+	
+	private global::Gtk.Table table2;
+	
 	private global::Gtk.ScrolledWindow GtkScrolledWindow;
 	
 	private global::Gtk.TextView textview1;
 	
-	private global::Gtk.Image image1;
+	private global::Gtk.ScrolledWindow GtkScrolledWindow1;
 	
-	private global::Gtk.Image image2;
+	private global::Gtk.TextView textview3;
 
 	protected virtual void Build ()
 	{
@@ -42,46 +48,66 @@ public partial class MainWindow
 		w1.XOptions = ((global::Gtk.AttachOptions)(4));
 		w1.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child table1.Gtk.Table+TableChild
-		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
-		this.GtkScrolledWindow.WidthRequest = 241;
-		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
-		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
-		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-		this.textview1 = new global::Gtk.TextView ();
-		this.textview1.Buffer.Text = "This is EzBar's Proof of Concept!\nThe purpose of this application\nis to prove that our design is\nfunctinal and is able to accurately\npour 1. Oz of liquid!";
-		this.textview1.CanFocus = true;
-		this.textview1.Name = "textview1";
-		this.GtkScrolledWindow.Add (this.textview1);
-		this.table1.Add (this.GtkScrolledWindow);
-		global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table1 [this.GtkScrolledWindow]));
-		w3.LeftAttach = ((uint)(1));
-		w3.RightAttach = ((uint)(2));
-		w3.XOptions = ((global::Gtk.AttachOptions)(4));
-		w3.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child table1.Gtk.Table+TableChild
 		this.image1 = new global::Gtk.Image ();
 		this.image1.Name = "image1";
 		this.image1.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("CapstoneTest.EzbarLogo.png");
 		this.table1.Add (this.image1);
-		global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table1 [this.image1]));
-		w4.XOptions = ((global::Gtk.AttachOptions)(4));
-		w4.YOptions = ((global::Gtk.AttachOptions)(4));
+		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1 [this.image1]));
+		w2.XOptions = ((global::Gtk.AttachOptions)(4));
+		w2.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child table1.Gtk.Table+TableChild
 		this.image2 = new global::Gtk.Image ();
 		this.image2.Name = "image2";
 		this.image2.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("CapstoneTest.TheFutureOfDrinking.png");
 		this.table1.Add (this.image2);
-		global::Gtk.Table.TableChild w5 = ((global::Gtk.Table.TableChild)(this.table1 [this.image2]));
-		w5.TopAttach = ((uint)(1));
-		w5.BottomAttach = ((uint)(2));
-		w5.XOptions = ((global::Gtk.AttachOptions)(4));
-		w5.YOptions = ((global::Gtk.AttachOptions)(4));
+		global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table1 [this.image2]));
+		w3.TopAttach = ((uint)(1));
+		w3.BottomAttach = ((uint)(2));
+		w3.XOptions = ((global::Gtk.AttachOptions)(4));
+		w3.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table1.Gtk.Table+TableChild
+		this.table2 = new global::Gtk.Table (((uint)(2)), ((uint)(1)), false);
+		this.table2.WidthRequest = 240;
+		this.table2.Name = "table2";
+		this.table2.RowSpacing = ((uint)(6));
+		this.table2.ColumnSpacing = ((uint)(6));
+		// Container child table2.Gtk.Table+TableChild
+		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
+		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
+		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
+		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
+		this.textview1 = new global::Gtk.TextView ();
+		this.textview1.HeightRequest = 200;
+		this.textview1.CanFocus = true;
+		this.textview1.Name = "textview1";
+		this.GtkScrolledWindow.Add (this.textview1);
+		this.table2.Add (this.GtkScrolledWindow);
+		// Container child table2.Gtk.Table+TableChild
+		this.GtkScrolledWindow1 = new global::Gtk.ScrolledWindow ();
+		this.GtkScrolledWindow1.Name = "GtkScrolledWindow1";
+		this.GtkScrolledWindow1.ShadowType = ((global::Gtk.ShadowType)(1));
+		// Container child GtkScrolledWindow1.Gtk.Container+ContainerChild
+		this.textview3 = new global::Gtk.TextView ();
+		this.textview3.HeightRequest = 10;
+		this.textview3.CanFocus = true;
+		this.textview3.Name = "textview3";
+		this.GtkScrolledWindow1.Add (this.textview3);
+		this.table2.Add (this.GtkScrolledWindow1);
+		global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table2 [this.GtkScrolledWindow1]));
+		w7.TopAttach = ((uint)(1));
+		w7.BottomAttach = ((uint)(2));
+		this.table1.Add (this.table2);
+		global::Gtk.Table.TableChild w8 = ((global::Gtk.Table.TableChild)(this.table1 [this.table2]));
+		w8.LeftAttach = ((uint)(1));
+		w8.RightAttach = ((uint)(2));
+		w8.XOptions = ((global::Gtk.AttachOptions)(4));
+		w8.YOptions = ((global::Gtk.AttachOptions)(4));
 		this.Add (this.table1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
 		this.DefaultWidth = 647;
-		this.DefaultHeight = 390;
+		this.DefaultHeight = 423;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.button1.Clicked += new global::System.EventHandler (this.OnButton1Clicked);
